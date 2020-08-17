@@ -129,6 +129,10 @@ if (config.hasAzure) {
 // special parsing of file upload paths -- this is inelegant having it
 // separate from the route handlers but it seems to be necessary
 // Special handling of file-upload routes so that we can parse multipart/form-data
+
+// Right now this is used for:
+// - the side-panel file upload by students
+// - 
 const upload = multer({
     storage: multer.memoryStorage(),
     limits: {
